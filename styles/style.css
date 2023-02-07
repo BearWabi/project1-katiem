@@ -239,15 +239,198 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
 .wrapper {
   width: 85%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: "Pompiere", cursive;
+  font-size: 11rem;
+  line-height: 64px;
+  color: #4C0341;
+}
+
+h3 {
+  font-family: "Pompiere", cursive;
+  font-size: 4.2rem;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+}
+
+.navFlex li {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 29px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.navFlex a {
+  color: #0D0D0D;
+}
+
+.logo {
+  font-family: "Pompiere", cursive;
+  font-size: 3.58rem;
+  line-height: 36px;
+  letter-spacing: 1.1px;
+}
+
+.logo span {
+  display: block;
+}
+
+.intro h2 {
+  font-family: "Pompiere", cursive;
+  font-size: 5.2rem;
+  letter-spacing: 1.2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4C0341;
+}
+
+.navFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2% 0;
+  position: relative;
+}
+
+.navFlex ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navFlex a {
+  margin: 15px;
+  padding: 10px;
+}
+
+.navFlex a:hover,
+.navFlex a:active,
+.navFlex a:focus {
+  background-color: #4C0341;
+  color: #FFFFFF;
+}
+
+.purpButt {
+  background-color: #4C0341;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.brownButt {
+  background-color: #882C07;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.shadowR {
+  -webkit-box-shadow: 20px 20px #FE6F19;
+          box-shadow: 20px 20px #FE6F19;
+}
+
+.shadowL {
+  -webkit-box-shadow: -20px 20px #FE6F19;
+          box-shadow: -20px 20px #FE6F19;
+}
+
 header {
   height: 100vh;
   background-image: url(../../project-1/assets/header-image.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position: top right;
+  position: relative;
+}
+
+header h1 span {
+  display: block;
+}
+
+header figure {
+  margin: 0;
+  width: 45%;
+  min-width: 590px;
+  max-width: 620px;
+  position: absolute;
+  right: 0px;
+  top: 20%;
+}
+
+.intro {
+  background-color: #FAE5FF;
+}
+
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.introText {
+  margin: 100px auto;
+  width: 90%;
+  text-align: center;
+}
+
+.readMore figure {
+  position: absolute;
+  margin: 0;
+  width: 45%;
+}
+
+.readMore .flexContainer {
+  height: 100%;
+}
+
+.additions {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.readMoreText {
+  width: 40%;
+  margin: 100px 0;
 }

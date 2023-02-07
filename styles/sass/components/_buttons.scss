@@ -1,0 +1,20 @@
+@use "../utils/variables" as *;
+
+@mixin button($color){
+    background-color: $color;
+    margin-top: 20px;
+    padding: 10px 20px;   
+    color: $white;
+    text-transform: uppercase;
+    font-family: $lato;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.purpButt {
+    @include button($plumPurple);
+}
+
+.brownButt {
+    @include button($brownRed);
+}

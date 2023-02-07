@@ -1,0 +1,9 @@
+@use "../utils/variables" as *;
+
+.shadowR {
+    box-shadow: 20px 20px $orange;    
+}
+
+.shadowL {
+    box-shadow: -20px 20px $orange;
+}

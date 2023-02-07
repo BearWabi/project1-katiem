@@ -13,8 +13,8 @@
 <body>
     <header>
         <div class="wrapper flexContainer">
-            <nav>
-                <p>Shoe Kloset</p>
+            <nav class="navFlex">
+                <p class="logo">Shoe <span>Kloset</span></p>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -22,37 +22,39 @@
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <h1>Find something new</h1>
-            <figure><img src="./assets/home-box-header.png" alt=""></figure>
+            <h1>Find <span>something</span> new</h1>
         </div>
+        <figure><img src="./assets/home-box-header.png" alt=""></figure>
     </header>
 
     <main>
-        <section>
+        <section class="intro">
             <div class="wrapper flexContainer">
-                <h2>What is under the sea?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum laborum facilis praesentium voluptatum, nulla beatae modi cumque! In culpa nostrum placeat esse veritatis enim et molestiae labore vero iure?</p>
-                <a href="#">Find out more</a>
+                <div class="introText">
+                    <h2>What is under the sea?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum laborum facilis praesentium voluptatum, nulla beatae modi cumque! In culpa nostrum placeat esse veritatis enim et molestiae labore vero iure? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque temporibus fuga ut eos perspiciatis reiciendis, nam aliquid suscipit ipsam dolorem corrupti nemo eligendi maiores mollitia itaque accusamus amet, atque aliquam?</p>
+                    <a href="#"  class="purpButt">Find out more</a> 
+                </div>
             </div>
         </section>
         
-        <figure><img src="./assets/left-image.jpg" alt="a pair of nike white sneakers"></figure>
-        <figure><img src="./assets/right-image.jpg" alt="three pairs of heels in beige tone"></figure>
-        <section>
-            <div class="wrapper flexContainer">
-                <section class="readMore">
+        <section class="readMore">
+            <figure class="shadowR nike"><img src="./assets/left-image.jpg" alt="a pair of nike white sneakers"></figure>
+            <div class="wrapper flexContainer additions">
+                <section class="readMoreText">
                     <h3>New Additions</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet exercitationem perferendis reiciendis molestiae beatae sit totam ad.</p>
-                    <a href="#">Read more</a>
+                    <a href="#" class="brownButt">Read more</a>
                 </section>
             </div>
         </section>
-        <section>
-            <div class="wrapper flexContainer">
-                <section class="readMore">
+        <section class="readMore">
+            <figure class="shadowL heels"><img src="./assets/right-image.jpg" alt="three pairs of heels in beige tone"></figure>
+            <div class="wrapper flexContainer options">
+                <section class="readMoreText">
                     <h3>Too Many Options</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nostrum dicta id deserunt illo accusamus ducimus. Minima?</p>
-                    <a href="#">Read more</a>
+                    <a href="#" class="brownButt">Read more</a>
                 </section>
             </div>
         </section>

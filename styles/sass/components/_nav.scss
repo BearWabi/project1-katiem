@@ -1,0 +1,25 @@
+@use "../utils/variables" as *;
+
+.navFlex {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0;
+    position: relative;
+}
+
+.navFlex ul {
+    display: flex;
+    align-items: center;
+}
+
+.navFlex a {
+    margin: 15px;
+    padding: 10px;
+}
+
+.navFlex a:hover,
+.navFlex a:active,
+.navFlex a:focus {
+    background-color: $plumPurple;
+    color: $white;
+}

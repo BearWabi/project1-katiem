@@ -1,9 +1,15 @@
-@use "../utils/variables" as v;
+@use "../utils/variables" as *;
 @use "../utils/mixins" as m;
 
 @mixin headingStyle ($fontSize) {
-    font-family: v.$pompiere;
+    font-family: $pompiere;
     font-size: $fontSize;
+}
+
+@mixin textStyle ($fontSize, $lineHeight){
+    font-family: $lato;
+    font-size: $fontSize;
+    line-height: $lineHeight;
 }
 
 html {
@@ -13,4 +19,47 @@ html {
 h1 {
     @include headingStyle(11rem);
     line-height: 64px;
+    color: $plumPurple;
+}
+
+h3 {
+    @include headingStyle(4.2rem);
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 2rem;
+    font-family: $lato;
+}
+
+.navFlex li {
+    @include textStyle(2rem, 29px);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.navFlex a {
+    color: $black;
+}
+
+.logo {
+    @include headingStyle(3.58rem);
+    line-height: 36px;
+    letter-spacing: 1.1px;
+}
+
+.logo span {
+    display: block;
+}
+
+.intro h2 {
+    @include headingStyle(5.2rem);
+    letter-spacing: 1.2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $plumPurple;
 }
