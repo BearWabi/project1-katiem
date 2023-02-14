@@ -38,6 +38,15 @@
 }
 
 @media (max-width: 768px) {
+    // nav bar
+    .navFlex {
+        flex-direction: column;
+
+        ul{
+        justify-content: space-between;
+        }
+    }
+
     // Blog page
     main.blogMain {
         flex-direction: column-reverse;
@@ -60,10 +69,11 @@
                 margin: 0 auto;
                 margin-bottom: 30px;
                 display: flex;
+                flex-direction: column;
 
-                section {
-                width: 138%;
-                } 
+                figure {
+                    display: none;
+                }
             }
         }
     }    
@@ -72,15 +82,19 @@
 @media (max-width: 480px) {
     // Nav bar
     nav.navFlex {
-        ul {
-            display: none;
+        p.logo {
+            margin-bottom: 10px;
         }
 
-        .fa-bars {
-            display: inline-block;
-            align-self: center;
-            font-size: 40px;
+        ul {
+            flex-wrap: wrap;
+
+            a {
+                margin: 0;
+                padding: 5px;
+            }
         }
+        
     }
 
     // Home page
@@ -132,5 +146,22 @@
         .flexContainer {
             flex-direction: column;
         }
+    }
+
+    // Contact Page 
+    .mainContact form.contactForm {
+        input {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 372px) {
+        section.findUs {
+            flex-direction: column;
+
+            .findUsIcon {
+                align-self: center;
+            }
     }
 }

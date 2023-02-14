@@ -429,9 +429,6 @@ footer p {
   background-color: #4C0341;
   color: #FFFFFF;
 }
-.navFlex i.far-bars {
-  display: none;
-}
 
 .purpButt {
   background-color: #4C0341;
@@ -442,6 +439,9 @@ footer p {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
   display: inline-block;
+}
+.purpButt:hover, .purpButt:focus {
+  background-color: #FE6F19;
 }
 
 .brownButt {
@@ -454,10 +454,16 @@ footer p {
   font-size: 2rem;
   display: inline-block;
 }
+.brownButt:hover, .brownButt:focus {
+  background-color: #FE6F19;
+}
 
 button {
   border: none;
   margin: 0;
+}
+button:hover, button:focus {
+  background-color: #FE6F19;
 }
 
 .shadowR {
@@ -614,6 +620,12 @@ header.blogHeader {
   position: relative;
   top: -20px;
 }
+.nikeFlex div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: 16.6666666667%;
+  text-align: right;
+}
 
 .heelsFlex {
   -webkit-box-orient: vertical;
@@ -625,18 +637,10 @@ header.blogHeader {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
-
-.additionsText {
+.heelsFlex div {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-right: 16.6666666667%;
-}
-
-.optionsText {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  margin-left: 16.6666666667%;
-  text-align: right;
 }
 
 .contacts {
@@ -656,7 +660,7 @@ header.blogHeader {
   padding: 100px 0;
 }
 
-.findUs {
+section.findUs {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   display: -webkit-box;
@@ -668,15 +672,15 @@ header.blogHeader {
           flex-direction: row;
   margin: 30px 0;
 }
-.findUs .findUsIcon {
+section.findUs .findUsIcon {
   width: 10%;
   text-align: center;
 }
-.findUs i {
+section.findUs i {
   font-size: 5.2rem;
   color: #4C0341;
 }
-.findUs .findUsText {
+section.findUs .findUsText {
   margin-left: 20px;
   width: 85%;
 }
@@ -712,7 +716,6 @@ header.blogHeader {
 .gallery {
   background-color: #FAE5FF;
 }
-
 .gallery .flexContainer {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -723,8 +726,7 @@ header.blogHeader {
           justify-content: space-between;
   padding: 70px 0;
 }
-
-.gallery figure {
+.gallery .flexContainer figure {
   margin: 0 0 10px 0;
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
@@ -751,7 +753,7 @@ main.mainContact {
   height: 100%;
 }
 
-.mainContact .contactForm {
+.mainContact form.contactForm {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
   height: 55vh;
@@ -943,6 +945,17 @@ footer {
   }
 }
 @media (max-width: 768px) {
+  .navFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navFlex ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   main.blogMain {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -964,20 +977,26 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  main.blogMain aside .sideWrapper section {
-    width: 138%;
+  main.blogMain aside .sideWrapper figure {
+    display: none;
   }
 }
 @media (max-width: 480px) {
-  nav.navFlex ul {
-    display: none;
+  nav.navFlex p.logo {
+    margin-bottom: 10px;
   }
-  nav.navFlex .fa-bars {
-    display: inline-block;
-    -ms-flex-item-align: center;
-        align-self: center;
-    font-size: 40px;
+  nav.navFlex ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  nav.navFlex ul a {
+    margin: 0;
+    padding: 5px;
   }
   div.readFlex {
     -webkit-box-orient: vertical;
@@ -1023,5 +1042,20 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .mainContact form.contactForm input {
+    width: 100%;
+  }
+}
+@media (max-width: 372px) {
+  section.findUs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.findUs .findUsIcon {
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }

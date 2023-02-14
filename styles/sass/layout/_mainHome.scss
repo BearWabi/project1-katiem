@@ -55,6 +55,12 @@
         position: relative;
         top: -20px;
     }
+
+    div {
+        align-self: flex-end;
+        margin-left: calc((0.5 / 0.45) * 0.15 * 100%);
+        text-align: right;
+    }
 }
 
 .heelsFlex {
@@ -64,17 +70,11 @@
     figure {
         align-self: flex-end;
     }
-}
 
-.additionsText {
-    align-self: flex-start;
-    margin-right: calc((0.5 / 0.45) * 0.15 * 100%);
-}
-
-.optionsText {
-    align-self: flex-end;
-    margin-left: calc((0.5 / 0.45) * 0.15 * 100%);
-    text-align: right;
+    div {
+        align-self: flex-start;
+        margin-right: calc((0.5 / 0.45) * 0.15 * 100%);
+    }
 }
 // END OF SECTION: Read more
 
@@ -92,7 +92,7 @@
     padding: 100px 0;
 }
 
-.findUs {
+section.findUs {
     flex-basis: 50%;
     display: flex;
     flex-direction: row;
@@ -150,17 +150,17 @@
 // SECTION: Gallery
 .gallery {
     background-color: $paleMauve;
-}
 
-.gallery .flexContainer {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 70px 0;
-}
-
-.gallery figure {
-    margin: 0 0 10px 0;
-    flex-basis: 32%;
-    width: 100%;
+    .flexContainer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 70px 0;
+    
+        figure {
+            margin: 0 0 10px 0;
+            flex-basis: 32%;
+            width: 100%;
+        }
+    }
 }
 // END of gallery

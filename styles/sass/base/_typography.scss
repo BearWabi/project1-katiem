@@ -1,5 +1,4 @@
 @use "../utils/variables" as *;
-@use "../utils/mixins" as m;
 
 @mixin headingStyle ($fontSize) {
     font-family: $pompiere;

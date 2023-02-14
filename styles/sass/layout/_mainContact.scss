@@ -13,8 +13,7 @@ main.mainContact {
     height: 100%;
 }
 
-.mainContact .contactForm {
-    // min-width: 660px;
+.mainContact form.contactForm {
     flex-basis: 60%;
     height: 55vh;
     min-height: 400px;
@@ -52,6 +51,4 @@ aside.contactInfo {
             }
         }
     }
-    
-
 }
