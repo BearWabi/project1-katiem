@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pompiere&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1100e65106.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="home">
         <div class="wrapper flexContainer">
             <nav class="navFlex">
                 <p class="logo">Shoe <span>Kloset</span></p>
@@ -21,6 +22,7 @@
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
+                <i class="fa-solid fa-bars"></i>
             </nav>
             <h1>Find <span>something</span> new</h1>
         </div>
@@ -37,63 +39,76 @@
                 </div>
             </div>
         </section>
-        
-        <section class="readMore">
-            <figure class="shadowR nike"><img src="./assets/left-image.jpg" alt="a pair of nike white sneakers"></figure>
-            <div class="wrapper flexContainer additions">
-                <section class="readMoreText">
-                    <h3>New Additions</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet exercitationem perferendis reiciendis molestiae beatae sit totam ad.</p>
-                    <a href="#" class="brownButt">Read more</a>
-                </section>
-            </div>
-        </section>
-        <section class="readMore">
-            <figure class="shadowL heels"><img src="./assets/right-image.jpg" alt="three pairs of heels in beige tone"></figure>
-            <div class="wrapper flexContainer options">
-                <section class="readMoreText">
-                    <h3>Too Many Options</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nostrum dicta id deserunt illo accusamus ducimus. Minima?</p>
-                    <a href="#" class="brownButt">Read more</a>
-                </section>
-            </div>
-        </section>
 
-        <section>
-            <div class="wrapper flexContainer">
+        <div class="readFlex">
+            <section class="heelsFlex">
+                <figure class="heels"><img src="./assets/right-image.jpg" alt="three pairs of heels in beige tone" class="shadowL"></figure>
+                <div class="additionsText">
+                    <h3>New Additions</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet exercitationem perferendis reiciendis molestiae beatae sit totam ad. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi quas, autem vero nisi itaque reprehenderit eos beatae. </p>
+                    <a href="#" class="brownButt">Read more</a>
+                </div>
+            </section>
+            <section class="nikeFlex">
+                <figure class="nike"><img src="./assets/left-image.jpg" alt="a pair of nike white sneakers" class="shadowR"></figure>
+                <div class="optionsText">
+                    <h3>Too Many Options</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nostrum dicta id deserunt illo accusamus ducimus. Minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, commodi officia ipsa delectus.</p>
+                    <a href="#" class="brownButt">Read more</a>
+                </div>
+            </section>
+        </div>
+
+        <section class="contacts">
+            <div class="wrapper contactsFlex">
                 <section class="findUs">
-                    <h2>Locations</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia quos dolorem doloremque eius. Molestias, aliquam assumenda!</p>
+                    <div class="findUsIcon"><i class="fa-solid fa-location-arrow"></i></div>
+                    <div class="findUsText">
+                        <h2>Locations</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia quos dolorem doloremque eius. Molestias, aliquam assumenda!</p>
+                    </div>
                 </section>
                 <section class="findUs">
-                    <h2>Community</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia quos dolorem doloremque eius. Molestias, aliquam assumenda!</p>
+                    <div class="findUsIcon"><i class="fa-solid fa-people-group"></i></div>
+                    
+                    <div class="findUsText">
+                        <h2>Community</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia quos dolorem doloremque eius. Molestias, aliquam assumenda!</p>
+                    </div>
                 </section>
                 <section class="findUs">
-                    <h2>Blog</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia quos dolorem doloremque eius. Molestias, aliquam assumenda!</p>
+                    <div class="findUsIcon"><i class="fa-solid fa-file"></i></div>
+                    <div class="findUsText">
+                        <h2>Blog</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia quos dolorem doloremque eius. Molestias, aliquam assumenda!</p>
+                    </div>
                 </section>
                 <section class="findUs">
-                    <h2>Get in touch</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia quos dolorem doloremque eius. Molestias, aliquam assumenda!</p>
+                    <div class="findUsIcon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="findUsText">
+                        <h2>Get in touch</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia quos dolorem doloremque eius. Molestias, aliquam assumenda!</p>
+                    </div>
                 </section>
             </div>
         </section>  
 
-        <figure class="sr-only"></figure>
+        <div class="decorBG">
+            <p class="sr-only">a pair of leather shoes</p>
+        </div>
 
-        <section>
+        <section class="popular">
             <div class="wrapper flexContainer">
-                <figure>img</figure>
-                <section>
+                <figure class="popularImg"><img src="../project-1/assets/square-image.jpg" alt="black heals on a carpet" class="shadowR"></figure>
+                <section class="popularText">
                     <h2>Popular this month</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat neque fugiat architecto aspernatur, id unde accusamus at sunt! Nesciunt fugit commodi porro esse repellendus aperiam praesentium, nostrum cumque impedit iure.</p>
-                    <a href="#">Find out more</a>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat neque fugiat architecto aspernatur, id unde accusamus at sunt! Nesciunt fugit commodi porro esse repellendus aperiam praesentium, nostrum cumque impedit iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, sint, natus explicabo, quos perspiciatis earum officia sit beatae a sequi consequatur quidem quas ipsa temporibus! Aut exercitationem ab error impedit?</p>
+                    <a href="#" class="brownButt">Find out more</a>
                 </section>
             </div>
         </section>
 
-        <section>
+        <section class="gallery">
             <div class="wrapper flexContainer">
                 <figure><img src="./assets/gallery-image-1.jpg" alt="legs of a person sitting on the rooftop hanging in the air wearing yellow whoes "></figure>
                 <figure><img src="./assets/gallery-image-2.jpg" alt="legs of a person wearing brown leather boots"></figure>

@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pompiere&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="blogHeader subHeader">
         <div class="wrapper flexContainer">
             <nav class="navFlex">
                 <p class="logo">Shoe <span>Kloset</span></p>
@@ -17,16 +21,68 @@
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
+                <i class="fa-solid fa-bars"></i>
             </nav>
+            <h1>Blog</h1>
         </div>
     </header>
 
-    <main>
-        <div class="wrapper flexContainer">
-            <section>
-                <form action="">
-                    <h1>Get in touch</h1>
+    <main class="blogMain">
+        <aside>
+            <div class="sideWrapper">
+                <figure><img src="./assets/sidebar-image.jpg" alt="the legs of a person wearing nike jumping with splash of water underneath"></figure>
+                <section>
+                    <h3>Any weather</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ratione fuga officia debitis vitae iusto nisi facere soluta.</p>
+                </section>
+                <section>
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+                </section>
+            </div>
+        </aside>
 
+        <div class="blogDiv">
+            <section class="blogPost">
+                <figure><img src="./assets/blog-post-image.jpg" alt="two person talking in heels" class="shadowL"></figure>
+                <div class="blogWrapper">
+                    <article>
+                        <h2>Shoes Around the World</h2>
+                        <h4>Monday May 4th, 2019 by Dieula</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum perferendis dolor ratione, inventore deserunt labore voluptas praesentium deleniti repellat non magni dicta accusantium, minus, delectus quae doloremque incidunt! Optio, temporibus?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic distinctio minima veritatis accusamus laborum dolores totam maiores velit voluptatibus, quas ad natus libero amet incidunt itaque quibusdam soluta beatae nam, corporis quasi id consequuntur fuga at. Beatae, eius cum rem est enim dolorum eaque aliquid optio assumenda, mollitia ratione vitae!</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et rerum incidunt eos odit cum, laborum tenetur sapiente modi facilis! Nemo.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="blogComments">
+                <div class="blogWrapper">
+                    <h2>Comments:</h2>
+                    <div class="commentsFlex">
+                        <figure><img src="./assets/comment-1.jpg" alt="a person with short hair"></figure>
+                        <div>
+                            <h4>Tuesday November 21th, 2019 by Jeremy</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum labore voluptas magnam sed suscipit sequi fugit non perspiciatis veniam omnis laboriosam distinctio nisi, maiores veritatis ea explicabo nemo quod autem?</p>
+                        </div>
+                    </div>
+                    <div class="commentsFlex">
+                        <figure><img src="./assets/comment-2.jpg" alt="a person with long hair"></figure>
+                        <div>
+                            <h4>Wednesday November 10th, 2019 by Julia</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab dolorem dolor. Nobis sit dicta quaerat voluptas provident incidunt quidem dolore est, accusantium dolores dignissimos expedita quia natus nesciunt enim.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="blogWrapper">
+                <form action="#" method="POST" name="contactForm" class="contactForm">
                     <label for="name" class="sr-only">Name</label>
                     <input type="text" placeholder="Name" id="name">
                     
@@ -34,24 +90,12 @@
                     <input type="email" placeholder="Email address" id="email">
                     
                     <label for="message" class="sr-only">Message</label>
-                    <input type="text" placeholder="message" id="message">
-                    
-                    <button>Submit</button>
+                    <textarea placeholder="Message" id="message"></textarea>
+                    <button class="purpButt">Post comment</button>
                 </form>
-            </section>
-
-            <aside>
-                <div class="contacts">
-                    <!-- think about how to add .sr-only -->
-                    <a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a>
-                    <p>info@email.com</p>
-                    <p>123-456-7890</p>
-                    <p>123 Queen Street West, Unit 10<br>Toronto, Ontario<br>M5V2D5</p>
-                </div>
-            </aside>
+            </div>
         </div>
     </main>
-    
     <footer>
         <div class="wrapper">
             <p>Copyright © 2019 JunoCollege</p>

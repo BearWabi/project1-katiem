@@ -8,6 +8,11 @@
 @use "./components/nav";
 @use "./components/buttons";
 @use "./components/images";
+@use "./components/form";
 
 @use "./layout/header";
-@use "./layout/main";
+@use "./layout/mainHome";
+@use "./layout/mainContact";
+@use "./layout/mainBlog";
+@use "./layout/footer";
+@use "./layout/mediaQueries";

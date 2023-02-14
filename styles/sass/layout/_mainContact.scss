@@ -1,0 +1,57 @@
+@use "../utils/variables" as *;
+
+main.mainContact {
+    background-color: $paleMauve;
+    height: 48vh;
+    min-height: 340px;
+}
+
+.mainFlex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.mainContact .contactForm {
+    // min-width: 660px;
+    flex-basis: 60%;
+    height: 55vh;
+    min-height: 400px;
+    background-color: $white;
+    margin: 0 0 20px 20px;
+    padding: 55px;
+    position: relative;
+    top: -157px;
+    overflow: auto;
+}
+
+aside.contactInfo {
+    flex-basis: 35%;
+    align-self: flex-end;
+    position: relative;
+    top: -70px;
+
+    div {
+        a {
+            color: $plumPurple;
+        }
+    
+        i {
+            font-size: 2.5rem;
+            margin: 10px 20px 5px 0;
+        }
+
+        p.infoEmail {
+            margin: 10px 0;
+        }
+
+        p.address {
+            span {
+                display: none;
+            }
+        }
+    }
+    
+
+}

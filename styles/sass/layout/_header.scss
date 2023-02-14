@@ -1,21 +1,45 @@
 header {
-    height: 100vh;
-    background-image: url(../../project-1/assets/header-image.jpg);
     background-size: cover;
     background-position: top right;
     position: relative;
+
+    .flexContainer {
+      height: 100%;
+      overflow: hidden;
+    }
   }
 
-  header h1 span {
-    display: block;
-  }
+header.home {
+  height: 100vh;
+  min-height: 770px;
+  background-image: url(../../project-1/assets/header-image.jpg);
+  
+    h1 span {
+      display: block;
+      }
 
-  header figure {
-    margin: 0;
-    width: 45%;
-    min-width: 590px;
-    max-width: 620px;
-    position: absolute;
-    right: 0px;
-    top: 20%;
-  }
+    figure {
+      margin: 0;
+      height: 47%;
+      width: 47%;
+      min-width: 430px;
+      max-width: 700px;
+      position: absolute;
+      right: 0px;
+      top: 30%;
+      }
+      
+}
+
+header.subHeader {
+  height: 50vh;
+  min-height: 485px;
+}
+
+header.contactHeader {
+  background-image: url(../../project-1/assets/contact-image.jpg);
+}
+
+header.blogHeader {
+  background-image: url(../../project-1/assets/blog-header.jpg);
+}

@@ -18,3 +18,8 @@
 .brownButt {
     @include button($brownRed);
 }
+
+button {
+    border: none;
+    margin: 0;
+}

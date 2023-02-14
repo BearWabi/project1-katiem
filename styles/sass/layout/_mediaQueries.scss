@@ -1,0 +1,136 @@
+@media (max-width: 830px) {
+    // home page
+    header.home {
+        figure {display: none;}
+    }
+
+    .contactsFlex {
+        flex-direction: column;
+    }
+
+    // Contact Page
+    main.mainContact {
+        height: fit-content;
+    }
+    .mainFlex {
+        flex-direction: column;
+
+        form.contactForm {
+            flex-basis: unset;
+        }
+        
+        aside.contactInfo {
+            width: 100%;
+            align-self: center;
+            text-align: center;
+            // position: relative;
+            // top: -100px;
+
+            br {
+                display: none;
+            }
+
+            p.address span {
+                display: inline;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    // Blog page
+    main.blogMain {
+        flex-direction: column-reverse;
+
+        .blogWrapper {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        section.blogPost {
+            article {
+                padding: 0;
+            }
+        }
+
+        aside {
+            .sideWrapper {
+                width: 85%;
+                max-width: none;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                display: flex;
+
+                section {
+                width: 138%;
+                } 
+            }
+        }
+    }    
+}
+
+@media (max-width: 480px) {
+    // Nav bar
+    nav.navFlex {
+        ul {
+            display: none;
+        }
+
+        .fa-bars {
+            display: inline-block;
+            align-self: center;
+            font-size: 40px;
+        }
+    }
+
+    // Home page
+    div.readFlex {
+        flex-direction: column;
+
+        section {
+            width: 85%;
+            margin: 0 auto;
+
+            div {
+                width: 100%;
+                margin: 0;
+                text-align: center;
+            }
+        }
+
+        section.heelsFlex {
+            flex-direction: column;
+
+            figure.heels {
+                position: relative;
+                top: -20px;
+            }
+        }
+
+        figure.nike {
+            position: static;
+        }
+    }
+
+    div.contactsFlex {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    section.popular {
+        figure.popularImg {
+            display: none;
+        }
+
+        section.popularText {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    section.gallery {
+        .flexContainer {
+            flex-direction: column;
+        }
+    }
+}

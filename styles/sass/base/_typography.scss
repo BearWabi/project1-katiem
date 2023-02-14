@@ -16,34 +16,66 @@ html {
     font-size: 62.5%;
 }
 
-h1 {
+h2 {
+    @include headingStyle(5.2rem);
+    text-transform: uppercase;
+}
+
+h4 {
+    @include textStyle(2rem, 2rem);
+        font-weight: bold;
+    }
+
+p,
+li {
+    font-size: 2rem;
+    font-family: $lato;
+    line-height: 3rem;
+}
+
+.home h1 {
     @include headingStyle(11rem);
-    line-height: 64px;
+    line-height: 6.4rem;
     color: $plumPurple;
 }
 
-h3 {
-    @include headingStyle(4.2rem);
-    letter-spacing: 1.3px;
+.subHeader h1 {
+    @include headingStyle(8rem);
+    line-height: 9.2rem;
+    color: $plumPurple;
     text-transform: uppercase;
-}
-
-p {
-    font-size: 2rem;
-    font-family: $lato;
-}
-
-.navFlex li {
-    @include textStyle(2rem, 29px);
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: bold;
     text-align: center;
-    letter-spacing: 1px;
+    z-index: 2;
 }
 
-.navFlex a {
-    color: $black;
+.intro h2 {
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: $plumPurple;
+}
+
+.contacts h2 {
+    letter-spacing: 1.6px;
+}
+
+.readFlex h3 {
+    @include headingStyle(4.2rem);
+    letter-spacing: 0.13rem;
+    text-transform: uppercase;
+}
+
+.blogMain {
+    h2,
+    h3 {
+        color: $plumPurple;
+    }
+
+    h3 {
+        @include headingStyle(3rem);
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+    }
+
 }
 
 .logo {
@@ -56,10 +88,38 @@ p {
     display: block;
 }
 
-.intro h2 {
-    @include headingStyle(5.2rem);
-    letter-spacing: 1.2px;
+.navFlex li {
+    @include textStyle(2rem, 29px);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
     text-align: center;
+    letter-spacing: 1px;
+}
+
+.blogMain aside li {
+    list-style: disc inside;
+}
+
+.navFlex a {
+    color: $black;
+}
+
+input::placeholder,
+textarea::placeholder {
+    @include textStyle(2rem, 32px);
+    color: $black;
+    opacity: 1;
+}
+
+p.infoEmail {
+    @include headingStyle(3rem);
+    letter-spacing: 1.3px;
     text-transform: uppercase;
     color: $plumPurple;
+}
+
+footer p {
+    text-align: center;
+    color: $white;
 }

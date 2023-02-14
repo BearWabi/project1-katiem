@@ -1,0 +1,166 @@
+@use "../utils/variables" as *;
+
+// SECTION: What's under the sea?
+.intro {
+    background-color: $paleMauve;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.introText {
+    margin: 100px auto;
+    width: 90%;
+    text-align: center;
+    z-index: 2;
+}
+// END OF SECTION
+
+// ********************************
+
+// SECTION: Read more
+.readFlex{
+    display: flex;
+    flex-direction: row-reverse;
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+
+        figure {
+                margin: 0;
+                width: 100%;
+        }
+
+        div {
+            padding: 15% 0;
+            max-width: 520px;
+
+            p {
+                padding: 10px 0;
+            }
+        }
+    }
+}
+
+.nikeFlex {
+    flex-direction: column;
+    margin-right: 10%;
+
+    figure {
+        align-self: flex-start;
+        position: relative;
+        top: -20px;
+    }
+}
+
+.heelsFlex {
+    flex-direction: column-reverse;
+    // margin-left: 70px;
+
+    figure {
+        align-self: flex-end;
+    }
+}
+
+.additionsText {
+    align-self: flex-start;
+    margin-right: calc((0.5 / 0.45) * 0.15 * 100%);
+}
+
+.optionsText {
+    align-self: flex-end;
+    margin-left: calc((0.5 / 0.45) * 0.15 * 100%);
+    text-align: right;
+}
+// END OF SECTION: Read more
+
+// ********************************
+
+// SECTION: Contacts
+.contacts {
+    background-color: $paleMauve;
+}
+
+.contactsFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 100px 0;
+}
+
+.findUs {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+    
+    .findUsIcon {
+        width: 10%;
+        text-align: center;
+    }
+
+    i {
+        font-size: 5.2rem;
+        color: $plumPurple;
+    }
+
+    .findUsText {
+        margin-left: 20px;
+        width: 85%;
+    }
+}
+// END OF SECTION: Contacts
+
+// ********************************
+
+// DIV: decorative background
+.decorBG {
+    background-image: url(../../project-1/assets/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+// END of DIV: decorative background
+
+// ********************************
+
+// SECTION: Popular this month
+.popular .flexContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0 70px 0;
+}
+
+.popularImg {
+    width: 30%;
+}
+
+.popularText {
+    width: 60%;
+    align-self: center;
+}
+// END of SECTION: popular
+
+// ****************************
+
+// SECTION: Gallery
+.gallery {
+    background-color: $paleMauve;
+}
+
+.gallery .flexContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+
+.gallery figure {
+    margin: 0 0 10px 0;
+    flex-basis: 32%;
+    width: 100%;
+}
+// END of gallery

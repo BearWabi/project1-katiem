@@ -4,22 +4,24 @@
     display: flex;
     justify-content: space-between;
     padding: 2% 0;
-    position: relative;
-}
+    z-index: 2;
 
-.navFlex ul {
-    display: flex;
-    align-items: center;
-}
+    ul {
+        display: flex;
+        align-items: center;
 
-.navFlex a {
-    margin: 15px;
-    padding: 10px;
-}
+        a {
+            margin: 15px;
+            padding: 10px;
 
-.navFlex a:hover,
-.navFlex a:active,
-.navFlex a:focus {
-    background-color: $plumPurple;
-    color: $white;
+            &:hover, &:focus {
+                background-color: $plumPurple;
+                color: $white;
+            }
+        }
+    }
+
+    i.far-bars {
+        display: none;
+    }
 }
