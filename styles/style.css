@@ -288,7 +288,6 @@ li {
   color: #4C0341;
   text-transform: uppercase;
   text-align: center;
-  z-index: 2;
 }
 
 .intro h2 {
@@ -413,7 +412,7 @@ footer p {
   padding: 2% 0;
   z-index: 2;
 }
-.navFlex ul {
+.navFlex .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -421,13 +420,64 @@ footer p {
       -ms-flex-align: center;
           align-items: center;
 }
-.navFlex ul a {
+.navFlex .menu a {
   margin: 15px;
   padding: 10px;
 }
-.navFlex ul a:hover, .navFlex ul a:focus {
+.navFlex .menu a:hover, .navFlex .menu a:focus {
   background-color: #4C0341;
   color: #FFFFFF;
+}
+
+.fa-bars {
+  display: none;
+  font-size: 3rem;
+}
+.fa-bars:hover {
+  cursor: pointer;
+}
+
+.hamburgerFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #FAE5FF;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 33%;
+  padding: 80px 35px 5px 0;
+  z-index: 3;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hamburger {
+  display: inline-block;
+  margin: 5px;
+}
+
+.dimON {
+  width: 100vw;
+  height: 100vh;
+  min-height: 10px;
+  min-width: 10px;
+  background: rgba(0, 0, 0, 0.54);
+  position: fixed;
+  top: 0;
+}
+.dimON:after {
+  content: " ";
 }
 
 .purpButt {
@@ -527,7 +577,7 @@ header .flexContainer {
 header.home {
   height: 100vh;
   min-height: 770px;
-  background-image: url(/assets/header-image.jpg);
+  background-image: url(../assets/header-image.jpg);
 }
 header.home h1 span {
   display: block;
@@ -549,11 +599,11 @@ header.subHeader {
 }
 
 header.contactHeader {
-  background-image: url(/assets/contact-image.jpg);
+  background-image: url(../assets/contact-image.jpg);
 }
 
 header.blogHeader {
-  background-image: url(/assets/blog-header.jpg);
+  background-image: url(../assets/blog-header.jpg);
 }
 
 .intro {
@@ -574,7 +624,6 @@ header.blogHeader {
   margin: 100px auto;
   width: 90%;
   text-align: center;
-  z-index: 2;
 }
 
 .readFlex {
@@ -945,16 +994,15 @@ footer {
   }
 }
 @media (max-width: 768px) {
-  .navFlex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .navFlex .menu {
+    width: 0;
   }
-  .navFlex ul {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .navFlex .fa-bars {
+    display: inline-block;
+    position: fixed;
+    right: 35px;
+    top: 30px;
+    z-index: 5;
   }
   main.blogMain {
     -webkit-box-orient: vertical;
@@ -997,6 +1045,9 @@ footer {
   nav.navFlex ul a {
     margin: 0;
     padding: 5px;
+  }
+  .home h1 {
+    font-size: 9rem;
   }
   div.readFlex {
     -webkit-box-orient: vertical;

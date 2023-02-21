@@ -12,7 +12,7 @@ header {
 header.home {
   height: 100vh;
   min-height: 770px;
-  background-image: url(/assets/header-image.jpg);
+  background-image: url(../assets/header-image.jpg);
   
     h1 span {
       display: block;
@@ -37,9 +37,9 @@ header.subHeader {
 }
 
 header.contactHeader {
-  background-image: url(/assets/contact-image.jpg);
+  background-image: url(../assets/contact-image.jpg);
 }
 
 header.blogHeader {
-  background-image: url(/assets/blog-header.jpg);
+  background-image: url(../assets/blog-header.jpg);
 }

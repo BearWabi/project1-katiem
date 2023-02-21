@@ -6,7 +6,7 @@
     padding: 2% 0;
     z-index: 2;
 
-    ul {
+    .menu {
         display: flex;
         align-items: center;
 
@@ -19,5 +19,50 @@
                 color: $white;
             }
         }
+    }
+}
+
+.fa-bars {
+    display: none;
+    font-size: 3rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+// hamburger menu
+.hamburgerFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: $paleMauve;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 33%;
+    padding: 80px 35px 5px 0;
+    z-index: 3;
+    transition-timing-function: linear;
+    transition: 0.5s;
+}
+
+.hamburger {
+    display: inline-block;
+    margin: 5px;
+}
+
+.dimON {
+    width: 100vw;
+    height: 100vh;
+    min-height: 10px;
+    min-width: 10px;
+    background: rgba(0,0,0,0.54);
+    position: fixed;
+    top: 0;
+
+    &:after {
+        content:' ';
     }
 }
