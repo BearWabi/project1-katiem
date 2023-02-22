@@ -1,0 +1,17 @@
+@use "../utils/variables" as *;
+
+.gallery {
+    background-color: $paleMauve;
+
+    .flexContainer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 70px 0;
+    
+        figure {
+            margin: 0 0 10px 0;
+            flex-basis: 32%;
+            width: 100%;
+        }
+    }
+}
