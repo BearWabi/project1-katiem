@@ -658,6 +658,10 @@ header.blogHeader {
   width: 90%;
   text-align: center;
 }
+.introText h2 {
+  position: relative;
+  z-index: 1;
+}
 
 .readFlex {
   display: -webkit-box;
@@ -768,7 +772,7 @@ section.findUs .findUsText {
 }
 
 .decorBG {
-  background-image: url(../../project-1/assets/banner.jpg);
+  background-image: url(../assets/banner.jpg);
   background-size: cover;
   background-position: center;
   height: 50vh;
@@ -1028,6 +1032,7 @@ footer {
 }
 @media (max-width: 768px) {
   .navFlex .menu {
+    height: 0;
     width: 0;
   }
   .navFlex .fa-bars {
@@ -1067,6 +1072,16 @@ footer {
     display: none;
   }
 }
+@media (max-width: 600px) {
+  div.popupFlex figure {
+    width: 330px;
+    height: 255px;
+  }
+  div.popupFlex a {
+    top: -112px;
+    right: 330px;
+  }
+}
 @media (max-width: 480px) {
   nav.navFlex p.logo {
     margin-bottom: 10px;
@@ -1078,6 +1093,9 @@ footer {
   nav.navFlex ul a {
     margin: 0;
     padding: 5px;
+  }
+  .hamburgerFlex {
+    width: 70%;
   }
   .home h1 {
     font-size: 9rem;
@@ -1126,6 +1144,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .mainContact form.contactForm {
+    padding: 35px;
   }
   .mainContact form.contactForm input {
     width: 100%;

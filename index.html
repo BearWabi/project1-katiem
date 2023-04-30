@@ -13,9 +13,7 @@
 </head>
 <body>
     <div class="popupFlex">
-        <!-- <div class="modal"> -->
         <figure><img src="./assets/sale-modal.jpg" alt=""></figure>
-        <!-- </div> -->
         <a class="closePopup"></a>
     </div>
     <header class="home">
@@ -25,18 +23,18 @@
                 <i class="fa-solid fa-bars"></i>
                 <ul class="menu">
                     <li class="noHamburger"><a href="./index.html">Home</a></li>
-                    <li class="noHamburger"><a href="#">About</a></li>
+                    <li class="noHamburger"><a href="#about" id="aboutLink">About</a></li>
                     <li class="noHamburger"><a href="./blog.html">Blog</a></li>
                     <li class="noHamburger"><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
             <h1>Find <span>something</span> new</h1>
         </div>
-        <figure class="annoyingImg"><img src="./assets/home-box-header.png" alt=""></figure>
+        <figure class="annoyingImg"><img src="assets/home-box-header.png" alt=""></figure>
     </header>
 
     <main>
-        <section class="intro">
+        <section class="intro" id="about">
             <div class="wrapper flexContainer">
                 <div class="introText">
                     <h2>What is under the sea?</h2>
@@ -128,7 +126,8 @@
             <p>Copyright © 2019 JunoCollege</p>
         </div>
     </footer>
-    <div class="dim dimON"></div>
-    <script src="./script.js"></script>
+    <div class="dim dimOFF"></div>
+    <script src="./Popup.js"></script>
+    <script src="./Hamburger.js"></script>
 </body>
 </html>
