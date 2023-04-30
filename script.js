@@ -1,7 +1,20 @@
+const dimScreen = document.querySelector('.dim');
+
+// Sale Popup Image
+const closeButton = document.querySelector('.closePopup');
+const popupFlex = document.querySelector('.popupFlex')
+
+closeButton.addEventListener('click', function(){
+    popupFlex.style.display = 'none';
+    dimScreen.classList.toggle('dimOFF');
+    dimScreen.classList.toggle('dimON');
+})
+
+
+// Hamburger Menu
 const hamburgerMenu = document.querySelector('.fa-bars');
 const hamburgerNav = document.querySelectorAll('.noHamburger');
 const hamburgerFlex = document.querySelector('ul');
-const dimScreen = document.querySelector('.dimOFF');
 
 hamburgerMenu.addEventListener('click',function(){
     hamburgerFlex.classList.toggle('menu');

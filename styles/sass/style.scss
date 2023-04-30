@@ -7,10 +7,12 @@
 @use "./components/buttons";
 @use "./components/images";
 @use "./components/form";
+@use "./components/popupModal";
 
 @use "./layout/header";
 @use "./layout/mainHome";
 @use "./layout/mainContact";
 @use "./layout/mainBlog";
+@use "./layout/gallery";
 @use "./layout/footer";
 @use "./layout/mediaQueries";

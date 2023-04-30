@@ -1,0 +1,29 @@
+@use "../utils/variables" as *;
+
+div.popupFlex {
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        figure {
+            margin: 0;
+            width: 600px;
+            height: 399.4px;
+        }
+
+        a {
+            width: 0;
+            font-size: 3rem;
+            position: relative;
+            top: -179px;
+            right: 589px;
+            cursor: pointer;
+
+            &::after {
+                content: '\22A0';
+            }
+        }
+}
